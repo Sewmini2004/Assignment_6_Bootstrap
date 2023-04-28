@@ -1,0 +1,68 @@
+<style>
+  .labelUp{
+    width:445px;
+    height:30px;
+    background-color: green;
+    text-align:left;
+    position: absolute;
+    color: white;
+    top: 3px;
+
+  }
+
+  .btn{
+    position: absolute;
+    left: 570px;
+
+  }
+</style>
+
+
+
+<main class="container-fluid">
+  <div class="labelUp ">Item Select</div>
+  <form>
+    <div class="row mt-5" >
+      <div class="col-3">
+        <label for="inputItem" class="form-label">Item  :</label>
+        <select id="inputItem" class="form-select">
+          <option selected></option>
+          <option>...</option>
+        </select>
+      </div>
+
+      <div class="mb-3 col-3">
+        <label for="exampleInputItemCode" class="form-label">Item Code  :</label>
+        <input type="text" class="form-control" id="exampleInputItemCode" >
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="mb-3 col-2">
+        <label for="exampleInputName" class="form-label">Item Name  :</label>
+        <input type="text" class="form-control" id="exampleInputName" >
+      </div>
+      <div class="mb-3 col-2">
+        <label for="exampleInputSalary" class="form-label">Price  :</label>
+        <input type="number" class="form-control" id="exampleInputSalary" >
+      </div>
+      <div class="mb-3 col-2">
+        <label for="exampleInputQtyOnHand" class="form-label">Price  :</label>
+        <input type="number" class="form-control" id="exampleInputQtyOnHand" >
+      </div>
+    </div>
+
+    <div class="mb-3 col-6">
+      <label for="exampleInputQtyOrder" class="form-label">Order Quantity  :</label>
+      <input type="number" class="form-control" id="exampleInputQtyOrder" >
+    </div>
+
+    <button type="submit" class="btn btn-danger">Add Item</button>
+
+
+
+  </form>
+
+</main>
