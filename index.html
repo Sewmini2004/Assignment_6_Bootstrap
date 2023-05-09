@@ -123,7 +123,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-danger" id="SaveBtnCustomer"  data-bs-dismiss="modal">Save</button>
                             <button type="button" class="btn btn-warning">Renew</button>
                             <button type="button" class="btn btn-primary">Close</button>
                         </div>
@@ -520,6 +520,20 @@
         $(".section-placeOrder").css('display','block');
 
     });
+
+
+    /*  Save btn Customer */
+
+    $("#SaveBtnCustomer").click(function () {
+        // gather customer information
+        let customerId = $("#exampleInputId").val();
+        let customerName = $("#exampleInputName").val();
+        let customerAddress = $("#exampleInputAddress").val();
+        let customerSalary = $("#exampleInputSalary").val();
+
+    console.log(customerId,customerName,customerAddress,customerSalary);
+    });
+
 
 
 </script>
